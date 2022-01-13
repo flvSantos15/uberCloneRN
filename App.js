@@ -1,15 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { Provider } from 'react-redux'
+import HomeScreen from './screens/HomeScreem';
 import { store } from './store';
-
-//Set up redux
 
 export default function App() {
   return (
     <Provider store={store}>
-      <View style={styles.container}>
-        <Text>Lets build Uber!</Text>
+      <View>
+        <HomeScreen/>
         <StatusBar style="auto" />
       </View>
     </Provider>
